@@ -1,4 +1,4 @@
-package cbe.android.com.cbe;
+package com.cbe.android;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
