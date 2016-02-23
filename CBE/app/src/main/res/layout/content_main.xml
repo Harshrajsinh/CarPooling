@@ -23,11 +23,19 @@
         android:text="Press ME"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        />
+
     <TextView
         android:id="@+id/textName"
         android:layout_toRightOf="@+id/titleLabel"
         android:text="ABC"
-        android:layout_width="wrap_content"
+        android:layout_width="wrap_cotent"
         android:layout_height="wrap_content" />
 
 </RelativeLayout>
