@@ -21,7 +21,7 @@ public class Practise extends Activity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                title.setText("Jai matadi ....");
+                title.setText("Hello chnges made here...");
             }
         });
     }
