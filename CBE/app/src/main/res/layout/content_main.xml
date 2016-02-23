@@ -17,4 +17,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="WOW CBE" />
+    <Button
+        android:id="@+id/btn"
+        android:layout_below="@+id/titleLabel"
+        android:text="Press ME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </RelativeLayout>
