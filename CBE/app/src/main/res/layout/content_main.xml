@@ -13,35 +13,6 @@
     tools:showIn="@layout/activity_main"
     android:background="@color/colorPrimaryDark">
 
-    <TextView
-        android:id="@+id/titleLabel"
-        android:textColor="#FFFFFF"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WOW CBE" />
-    <Button
-        android:id="@+id/btn"
-        android:layout_below="@+id/titleLabel"
-        android:text="Press ME"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-    <ImageView
-        android:id="@+id/iv"
-        android:layout_marginTop="80dp"
-        android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
-        />
-
-    <TextView
-        android:id="@+id/textName"
-        android:layout_marginLeft="25dp"
-        android:layout_toRightOf="@+id/titleLabel"
-        android:text="ABC"
-        android:textColor="#FFFFFF"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 </RelativeLayout>
