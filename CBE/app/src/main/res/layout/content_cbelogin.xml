@@ -4,14 +4,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:weightSum="1">
 
+
+
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/login_start"
+        android:hint="UserId"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginTop="@dimen/space_bt_edttxt"
+        android:id="@+id/editText2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/btn_height"
+        android:text="Login"
+        android:id="@+id/button"
+        android:paddingRight="@dimen/btn_text_padding"
+        android:paddingLeft="@dimen/btn_text_padding"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.01"
+        android:layout_marginTop="@dimen/space_bt_edttxt"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="UserID"
+        android:text="Forgot Password?"
+        android:layout_marginTop="@dimen/space_bt_edttxt"
         android:id="@+id/textView"
-        />
+        android:layout_gravity="center_horizontal" />
+
+
 </LinearLayout>
