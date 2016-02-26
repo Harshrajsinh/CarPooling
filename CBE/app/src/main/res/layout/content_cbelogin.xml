@@ -13,5 +13,5 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="UserID"
         android:id="@+id/textView"
-        android:layout_gravity="center" />
+        />
 </LinearLayout>
