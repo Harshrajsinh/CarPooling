@@ -5,7 +5,7 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="btn_text_padding">14dp</dimen>
     <dimen name="btn_height">36dp</dimen>
-    <dimen name="login_start">130dp</dimen>
-    <dimen name="space_bt_edttxt">20dp</dimen>
+    <dimen name="login_start">120dp</dimen>
+    <dimen name="space_bt_edttxt">30dp</dimen>
 
 </resources>

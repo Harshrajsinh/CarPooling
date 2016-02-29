@@ -1,15 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:fitsSystemWindows="true"
-    tools:context="com.cbe.android.ui.login.CBELogin">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="1">
 
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_userId"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/login_start"
+        android:hint="@string/user_id"/>
 
-    <include layout="@layout/content_cbelogin" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:layout_marginTop="@dimen/space_bt_edttxt"
+        android:id="@+id/edt_password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/btn_height"
+        android:text="@string/button_name"
+        android:id="@+id/btn_login"
+        android:paddingRight="@dimen/btn_text_padding"
+        android:paddingLeft="@dimen/btn_text_padding"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/textColor"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.01"
+        android:layout_marginTop="@dimen/space_bt_edttxt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textColor="@color/colorPrimaryDark"
+        android:linksClickable="true"
+        android:layout_marginTop="@dimen/space_bt_edttxt"
+        android:id="@+id/txt_forgotPassword"
+        android:layout_gravity="center_horizontal" />
 
 
-
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
