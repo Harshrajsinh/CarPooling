@@ -1,5 +1,9 @@
 <resources>
 
+    <?xml version="1.0" encoding="utf-8"?>
+
+
+
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
@@ -7,6 +11,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -14,4 +19,65 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-</resources>
+
+        <style name="Theme.Cbe" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+            <item name="actionBarItemBackground">@drawable/selectable_background</item>
+            <item name="popupMenuStyle">@style/PopupMenu.Cbe</item>
+            <item name="dropDownListViewStyle">@style/DropDownListView.Cbe</item>
+            <item name="actionBarTabStyle">@style/ActionBarTabStyle.Cbe</item>
+            <item name="actionDropDownStyle">@style/DropDownNav.Cbe</item>
+            <item name="actionBarStyle">@style/ActionBar.Solid.Cbe</item>
+            <item name="actionModeBackground">@mipmap/cab_background_top_cbe</item>
+            <item name="actionModeSplitBackground">@mipmap/cab_background_bottom_cbe</item>
+            <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Cbe</item>
+
+            <!-- Light.DarkActionBar specific -->
+            <item name="actionBarWidgetTheme">@style/Theme.Cbe.Widget</item>
+
+        </style>
+
+        <style name="ActionBar.Solid.Cbe" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+            <item name="background">@mipmap/ab_solid_cbe</item>
+            <item name="backgroundStacked">@mipmap/ab_stacked_solid_cbe</item>
+            <item name="backgroundSplit">@mipmap/ab_bottom_solid_cbe</item>
+            <item name="progressBarStyle">@style/ProgressBar.Cbe</item>
+        </style>
+
+        <style name="ActionBar.Transparent.Cbe" parent="@style/Widget.AppCompat.ActionBar">
+            <item name="background">@mipmap/ab_transparent_cbe</item>
+            <item name="progressBarStyle">@style/ProgressBar.Cbe</item>
+        </style>
+
+        <style name="PopupMenu.Cbe" parent="@style/Widget.AppCompat.PopupMenu">
+            <item name="android:popupBackground">@mipmap/menu_dropdown_panel_cbe</item>
+        </style>
+
+        <style name="DropDownListView.Cbe" parent="@style/Widget.AppCompat.ListView.DropDown">
+            <item name="android:listSelector">@drawable/selectable_background</item>
+        </style>
+
+        <style name="ActionBarTabStyle.Cbe" parent="@style/Widget.AppCompat.ActionBar.TabView">
+            <item name="android:background">@drawable/tab_indicator_ab</item>
+        </style>
+
+        <style name="DropDownNav.Cbe" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
+            <item name="android:background">@drawable/spinner_background_ab</item>
+            <item name="android:popupBackground">@mipmap/menu_dropdown_panel_cbe</item>
+            <item name="android:dropDownSelector">@drawable/selectable_background</item>
+        </style>
+
+        <style name="ProgressBar.Cbe" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+            <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+        </style>
+
+        <style name="ActionButton.CloseMode.Cbe" parent="@style/Widget.AppCompat.ActionButton.CloseMode">
+            <item name="android:background">@drawable/btn_cab_done</item>
+        </style>
+
+        <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+        <style name="Theme.Cbe.Widget" parent="@style/Theme.AppCompat">
+            <item name="popupMenuStyle">@style/PopupMenu.Cbe</item>
+            <item name="dropDownListViewStyle">@style/DropDownListView.Cbe</item>
+        </style>
+
+    </resources>
