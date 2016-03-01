@@ -1,17 +1,20 @@
-package com.cbe.android.ui.dashboard.navigationdrawer.common;
+package com.cbe.android.ui.dashboard.navigationdrawer.eventorganization;
 
+/**
+ * Created by intern.jineshc on 2/29/2016.
+ */
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import com.cbe.android.R;
 
-public class Feedback extends AppCompatActivity {
+public class CreateEvent extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.feedback);
+        setContentView(R.layout.create_event);
 
     }
 
