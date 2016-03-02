@@ -4,4 +4,6 @@
     <string name="car_description">Car Pooling module can be used for the finding the ride which is provided by fellow Rishabh colleges or offer the ride.</string>
     <string name="blood_description">Blood Finder module can be used for the finding the blood banks or finding a donor and also donation of the blood.</string>
     <string name="event_description">Event Organization module can be used for the getting the information about the events and also about groups of RSPL.</string>
+    <string name="navigation_drawer_open">naviopen</string>
+    <string name="navigation_drawer_close">neviclose</string>
 </resources>
