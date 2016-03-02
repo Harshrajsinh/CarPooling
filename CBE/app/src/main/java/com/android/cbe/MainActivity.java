@@ -1,6 +1,5 @@
 package com.android.cbe;
 
-import android.cbe.com.cbe.R;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.cbe.android.R;
 
 public class MainActivity extends AppCompatActivity {
 

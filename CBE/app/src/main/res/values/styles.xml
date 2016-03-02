@@ -25,6 +25,11 @@
 
 
     <style name="Theme.Cbe" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
         <item name="actionBarItemBackground">@drawable/selectable_background</item>
         <item name="popupMenuStyle">@style/PopupMenu.Cbe</item>
         <item name="dropDownListViewStyle">@style/DropDownListView.Cbe</item>

@@ -1,9 +1,10 @@
 package com.android.cbe.ui.login;
 
-import android.cbe.com.cbe.R;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+
+import com.cbe.android.R;
 
 
 public class CBELogin extends AppCompatActivity {

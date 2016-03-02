@@ -1,7 +1,9 @@
 package com.android.cbe.ui.dashboard;
 
-import android.cbe.com.cbe.R;
+
 import com.android.cbe.ui.dashboard.dashboardanimation.ExpandAnimation;
+import com.cbe.android.R;
+
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
