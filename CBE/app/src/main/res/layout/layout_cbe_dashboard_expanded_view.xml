@@ -6,7 +6,7 @@
     <TextView android:id="@+id/title123"
 
         android:padding="20dip"
-        android:textColor="green"
+        android:textColor="@color/green_100"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"/>
 
@@ -26,7 +26,7 @@
 
         <TextView
             android:id="@+id/description"
-            android:textColor="blue"
+            android:textColor="@color/blue_100"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="70"
