@@ -15,11 +15,7 @@
         android:layout_height="40dp"
         android:src="@drawable/navigation_drawer"/>
 
-    <TextView
-        android:text="@string/app_name"
-        android:layout_marginLeft="50dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
 
 
 
