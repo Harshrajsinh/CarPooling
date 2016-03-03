@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cbe.android" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,64 +11,41 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cbe" >
         <activity
-            android:name="com.android.cbe.ui.dashboard.CBEDashboard"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Cbe">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.android.cbe.ui.dashboard.navigationdrawer.common.Feedback"
+            android:name="com.android.cbe.ui.dashboard.navigationdrawer.common.Feedback"
             android:label="FeedBack"
-            android:theme="@style/Theme.Cbe">
+            android:theme="@style/Theme.Cbe" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="com.android.cbe.baseapp.baseclass.BaseActivity"
             android:theme="@style/AppTheme" >
             <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.cbe.ui.login.CBELoginActivity"
+            android:theme="@style/myAppTheme" >
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-
-
+        <activity android:name="com.android.cbe.ui.dashboard.CBEDashboard"
+            android:theme="@style/myAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
-
-
-
-
-
-    <!--
-    <?xml version="1.0" encoding="utf-8"?>
-    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="android.cbe.com.cbe" >
-
-        <application
-            android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
-            android:label="@string/app_name"
-            android:supportsRtl="true"
-            android:theme="@style/AppTheme" />
-
-            <activity
-                android:name="com.android.cbe.ui.dashboard.CBEDashboard"
-                android:label="@string/app_name"
-                android:theme="@style/AppTheme.NoActionBar" >
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
-
-                    <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
-            </activity>
-    </manifest>
-    -->

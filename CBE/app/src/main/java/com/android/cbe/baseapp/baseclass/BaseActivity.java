@@ -1,7 +1,6 @@
 
 package com.android.cbe.baseapp.baseclass;
 
-import android.cbe.com.cbe.R;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -10,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.android.cbe.MainActivity;
+import com.cbe.android.R;
 
 
 public class BaseActivity extends AppCompatActivity{
