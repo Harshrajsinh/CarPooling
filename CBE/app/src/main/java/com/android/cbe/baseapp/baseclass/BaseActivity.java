@@ -1,5 +1,7 @@
 package com.android.cbe.baseapp.baseclass;
 
+import android.support.v7.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,6 +15,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+
+import com.android.cbe.ui.dashboard.CBEDashboard;
+import com.android.cbe.ui.dashboard.navigationdrawer.common.Feedback;
+import com.cbe.android.R;
+
 
 import com.cbe.android.R;
 
@@ -34,6 +41,7 @@ public abstract class BaseActivity extends AppCompatActivity
     protected boolean useToolbar() {
         return true;
     }
+
 
 
     /**
@@ -145,11 +153,11 @@ public abstract class BaseActivity extends AppCompatActivity
 
         switch (id) {
             case R.id.nav_1:
-                createBackStack(new Intent(this, Activity1.class));
+                createBackStack(new Intent(this, CBEDashboard.class));
                 break;
 
             case R.id.nav_2:
-                createBackStack(new Intent(this, Activity2.class));
+                createBackStack(new Intent(this,Feedback.class));
                 break;
         }
 

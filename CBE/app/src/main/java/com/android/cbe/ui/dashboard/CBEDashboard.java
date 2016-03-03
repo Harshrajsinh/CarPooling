@@ -1,48 +1,50 @@
 package com.android.cbe.ui.dashboard;
 
+import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 
-import com.android.cbe.ui.dashboard.dashboardanimation.ExpandAnimation;
+import com.android.cbe.baseapp.baseclass.BaseActivity;
 import com.cbe.android.R;
 
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
+public class  CBEDashboard extends BaseActivity {
 
-import java.util.ArrayList;
+    private View rootView;
 
-/**
- * Created by Intern.harshrajT on 2/23/2016.
- */
-public class CBEDashboard extends AppCompatActivity{
-    ArrayList<DashBoardModel> moduleList;
-    ListView dashboardListView;
-    private Toolbar toolbar;
+
     @Override
-    public void setContentView(int layoutResID) {
-        super.setContentView(layoutResID);
-        setContentView(R.layout.layout_cbe_dashboard);
-        dashboardListView=(ListView)findViewById(R.id.dashboardList);
-
-        //Populeting Pojo
-        DashBoardModel dModelCar=new DashBoardModel(1,getResources().getString(R.string.car_description));
-        DashBoardModel dModelBlood=new DashBoardModel(2,getResources().getString(R.string.blood_description));
-        DashBoardModel dModelEvent=new DashBoardModel(1,getResources().getString(R.string.event_description));
-        moduleList.add(dModelCar);
-        moduleList.add(dModelBlood);
-        moduleList.add(dModelEvent);
-
-        dashboardListView.setAdapter(new DashBoardAdapter(getApplicationContext(), moduleList));
-        dashboardListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                View toolbar1=view.findViewById(R.id.toolbar1);
-                ExpandAnimation expandAnimation = new ExpandAnimation(toolbar1, 500);
-                toolbar.startAnimation(expandAnimation);
-
-            }
-        });
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_1);
+        rootView = findViewById(R.id.activity1_container);
+        mNavigationView.getMenu().getItem(0).setChecked(true);
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_activity1, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
+
 }
