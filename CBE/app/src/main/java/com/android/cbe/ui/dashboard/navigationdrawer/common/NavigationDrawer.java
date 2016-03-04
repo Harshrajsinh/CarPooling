@@ -1,8 +1,6 @@
 package com.android.cbe.ui.dashboard.navigationdrawer.common;
 
-/**
- * Created by intern.jineshc on 3/2/2016.
- */
+
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -16,8 +14,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.cbe.android.R;
+
 
 public class NavigationDrawer extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -25,7 +25,7 @@ public class NavigationDrawer extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_cbe_navigationdrawer);
+        setContentView(R.layout.navigation_activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -86,20 +86,26 @@ public class NavigationDrawer extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_carpooling) {
+            Toast.makeText(getApplicationContext(), "You are select Car Pooling ", Toast.LENGTH_SHORT).show();
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
         }
-
+        if (id == R.id.nav_blood_finder) {
+            Toast.makeText(getApplicationContext(), "You are select Blood Finder ", Toast.LENGTH_SHORT).show();
+            // Handle the camera action
+        }
+        if (id == R.id.nav_event_organization) {
+            Toast.makeText(getApplicationContext(), "You are select Event Organization ", Toast.LENGTH_SHORT).show();
+            // Handle the camera action
+        }
+        if (id == R.id.nav_setting) {
+            Toast.makeText(getApplicationContext(), "You are select Setting ", Toast.LENGTH_SHORT).show();
+            // Handle the camera action
+        }
+        if (id == R.id.nav_feedback) {
+            Toast.makeText(getApplicationContext(), "You are select FeedBack ", Toast.LENGTH_SHORT).show();
+            // Handle the camera action
+        }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
