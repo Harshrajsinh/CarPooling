@@ -18,7 +18,7 @@ public class  CBEDashboard extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_1);
+//        setContentView(R.layout.activity_1);
         rootView = findViewById(R.id.activity1_container);
         mNavigationView.getMenu().getItem(0).setChecked(true);
     }
@@ -29,6 +29,7 @@ public class  CBEDashboard extends BaseActivity {
         getMenuInflater().inflate(R.menu.menu_activity1, menu);
         return true;
     }
+    
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

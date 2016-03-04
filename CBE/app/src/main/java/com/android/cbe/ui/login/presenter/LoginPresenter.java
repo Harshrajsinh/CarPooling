@@ -1,8 +1,9 @@
 package com.android.cbe.ui.login.presenter;
 
+import com.android.cbe.ui.login.LoginContractor;
 import com.android.cbe.ui.login.model.LoginModel;
+import com.android.cbe.ui.login.model.LoginRequestModelExample;
 import com.android.cbe.ui.login.model.LoginResponse;
-import com.android.cbe.ui.login.view.ILoginView;
 import com.android.cbe.webservice.CBEServiceClass;
 import com.android.cbe.webservice.CBEServices;
 
@@ -17,20 +18,20 @@ import retrofit.Retrofit;
 /**
  * Created by Intern.harshrajT on 3/3/2016.
  */
-public class LoginPresenter implements ILoginPresenter {
-    ILoginView iLoginView;
+public class LoginPresenter implements LoginContractor.ILoginPresenter {
+    LoginContractor.ILoginView iLoginView;
     LoginModel loginModel;
     List<LoginModel> loginModelList;
 
-    public LoginPresenter(ILoginView iLoginView) {
+    public LoginPresenter(LoginContractor.ILoginView iLoginView) {
         this.iLoginView = iLoginView;
     }
 
     @Override
     public void doLogin(String userName, String password) {
         loginModelList=new ArrayList<>();
-        CBEServices cbeServices=CBEServiceClass.getList();
-        Call<LoginResponse> call=cbeServices.listResp(userName);
+        CBEServices cbeServices=CBEServiceClass.loginServiceConnection();
+        Call<LoginResponse> call=cbeServices.loginResponse(userName);
         call.enqueue(new Callback<LoginResponse>() {
             @Override
             public void onResponse(Response<LoginResponse> response, Retrofit retrofit) {
@@ -47,5 +48,12 @@ public class LoginPresenter implements ILoginPresenter {
 
             }
         });
+
+
+    }
+
+    @Override
+    public void doLogin(LoginRequestModelExample loginRequestModelExample) {
+
     }
 }

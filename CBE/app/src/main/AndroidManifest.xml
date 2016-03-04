@@ -31,13 +31,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name="com.android.cbe.MainActivity"
-            android:theme="@style/AppTheme" >
-        </activity>
-
-
-
     </application>
 
 </manifest>
