@@ -6,7 +6,9 @@ import com.squareup.okhttp.Interceptor;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Response;
 import java.io.IOException;
+import java.util.logging.Level;
 
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit.Call;
 import retrofit.GsonConverterFactory;
 import retrofit.Retrofit;
@@ -18,9 +20,11 @@ import retrofit.http.Query;
  */
 public class CBEServiceClass {
     static CBEServices cbeServices;
-    public static final  String  url="https://api.github.com";
-    public static CBEServices getList() {
+    public static final  String  url=HTTPConstant.LOGIN_BASE_URL;
+    public static CBEServices loginServiceConnection() {
         if (cbeServices == null) {
+            HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
+            interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
             OkHttpClient okHttpClient = new OkHttpClient();
             okHttpClient.interceptors().add(new Interceptor() {
                 @Override

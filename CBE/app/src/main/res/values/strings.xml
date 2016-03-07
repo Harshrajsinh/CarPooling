@@ -6,7 +6,23 @@
     <string name="event_description">Event Organization module can be used for the getting the information about the events and also about groups of RSPL.</string>
     <string name="navigation_drawer_open">naviopen</string>
     <string name="navigation_drawer_close">neviclose</string>
-    <string name="app_name1"></string>
+    <string name="hello">Hello World, SpalshScreenActivity!</string>
+    <string name="spalshscreen">SpalshScreen</string>
+    <string name="event_name">Event Name</string>
+    <string name="hint_description">Description</string>
+    <string name="Venue">Venue</string>
+    <string name="btn_Group">Group</string>
+    <string name="btn_Member">Member</string>
+    <string name="Manage_By">Manege by</string>
+    <string name="Contact_By">Contact by</string>
+    <string name="Custom_Invitation">Custom Invitation</string>
+    <string name="Create_Event">Create Event</string>
+
+
+
+
+
+
     <!-- Accessibility description for navigation mDrawerLayout -->
     <string name="navdrawer_description_a11y">Navigation Drawer used to switch between major features of the application</string>
     <string name="title_activity_deleteme">deleteme</string>

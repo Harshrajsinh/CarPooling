@@ -23,6 +23,7 @@ public abstract class BaseActivity extends AppCompatActivity
 
 
     TextView header_txt;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_base);
@@ -30,34 +31,27 @@ public abstract class BaseActivity extends AppCompatActivity
         //Set custom Toolbar
 
 
-
-
 //        addNavigationDrawer(R.id.drawer_layout,R.id.fragment_navigation_drawer,mToolbar);
 
     }
 
     @Override
-    public void setContentView(int layoutResID)
-    {
+    public void setContentView(int layoutResID) {
         DrawerLayout fullView = (DrawerLayout) getLayoutInflater().inflate(R.layout.activity_base2, null);
         FrameLayout activityContainer = (FrameLayout) fullView.findViewById(R.id.activity_content);
         getLayoutInflater().inflate(layoutResID, activityContainer, true);
         super.setContentView(fullView);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        if (useToolbar())
-        {
+        if (useToolbar()) {
             setSupportActionBar(toolbar);
             getSupportActionBar().setDisplayShowTitleEnabled(false);
-        }
-        else
-        {
+        } else {
             toolbar.setVisibility(View.GONE);
         }
     }
 
 
-    protected boolean useToolbar()
-    {
+    protected boolean useToolbar() {
         return true;
     }
 
@@ -65,10 +59,9 @@ public abstract class BaseActivity extends AppCompatActivity
     @Override
     public void setTitle(CharSequence title) {
 
-        header_txt=(TextView)findViewById(R.id.header_text);
+        header_txt = (TextView) findViewById(R.id.header_text);
         header_txt.setText(title);
     }
-
 
 
     public void setToolbar(ActionBarActivity context, Toolbar toolBar, boolean isSubActivity) {
@@ -83,11 +76,11 @@ public abstract class BaseActivity extends AppCompatActivity
         }
     }
 
-   public void addNavigationDrawer(int drawerLayoutId, int fragmentNavDrawerId, Toolbar toolbar) {
+    public void addNavigationDrawer(int drawerLayoutId, int fragmentNavDrawerId, Toolbar toolbar) {
         DrawerLayout drawerLayout = (DrawerLayout) findViewById(drawerLayoutId);
 
-       // NavigationDrawerFragment drawerFragment = (NavigationDrawerFragment)
-         //       getSupportFragmentManager().findFragmentById(fragmentNavDrawerId);
+        // NavigationDrawerFragment drawerFragment = (NavigationDrawerFragment)
+        //       getSupportFragmentManager().findFragmentById(fragmentNavDrawerId);
 
         //drawerFragment.setUp(fragmentNavDrawerId, drawerLayout, toolbar);
     }
@@ -124,3 +117,4 @@ public abstract class BaseActivity extends AppCompatActivity
 
     }
 }//end BaseActivity
+

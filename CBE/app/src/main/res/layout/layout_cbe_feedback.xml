@@ -10,24 +10,34 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/colorPrimaryDark"
-        android:hint="Hint_Name"
+        android:hint="@string/username"
         android:enabled="false"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"/>
 
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        android:hint="Hint_Email"
+        android:hint="@string/user_email_id"
         android:enabled="false"
         android:inputType="textEmailAddress" />
 
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="Hint_Dept_age"
-        android:enabled="false"/>
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/department"
+        android:enabled="false" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/age"
+        android:enabled="false" />
 
     <EditText
         android:layout_width="fill_parent"
@@ -35,7 +45,7 @@
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
         android:gravity="top"
-        android:hint="Hint_Comment"
+        android:hint="@string/comment"
         android:fitsSystemWindows="true"
         android:maxEms="250"
         android:inputType="textMultiLine"
@@ -43,6 +53,7 @@
 
 
     <RatingBar
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:numStars="5"
@@ -51,18 +62,20 @@
         android:rating="1.0"/>
 
     <CheckBox
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send as Anonymous"/>
+        android:text="@string/anonymous"/>
 
     <Button
+        android:layout_marginTop="60dp"
         android:layout_width="wrap_content"
         android:layout_height="36dp"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/raised_button"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:text="submit"
+        android:text="@string/submit"
         android:textColor="#ffffff" />
 
 </LinearLayout>
