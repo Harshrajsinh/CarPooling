@@ -4,6 +4,7 @@
 
     <style name="myAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="myAppTheme1" parent="Theme.AppCompat.Light.NoActionBar">

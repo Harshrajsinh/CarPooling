@@ -1,4 +1,4 @@
-package com.android.cbe.ui.dashboard.dashboardanimation;
+package com.android.cbe.baseapp.utils;
 
 import android.view.View;
 import android.view.animation.Animation;

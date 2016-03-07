@@ -1,38 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/base"
     android:orientation="vertical">
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutBaseFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/header"
-        android:background="@color/colorPrimary"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/back"/>
+        <RelativeLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
 
-        <TextView android:text="Frament Title " android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="#ffffff"
-        android:id="@+id/header_title"/>
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/navigation_drawer"
+                android:visibility="visible" />
+
+            <!--style="@style/fragment_header"-->
+            <TextView
+                android:id="@+id/tvHeaderLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/btnBack"
+                android:capitalize="characters"
+                android:inputType="textNoSuggestions"
+                android:text="Fragment Title"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/tvHeaderLabel"
+                android:gravity="right">
+
+               <!--
+                Button Properties
+               android:background="@color/navBarGreen"
+                android:drawableLeft="@drawable/calendar"
+                android:text="@string/btn_calender"
+                android:textColor="@color/White"-->
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/tvHeaderLabel"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:visibility="gone" />
+
+                <!--
+                ImgegeView Properties
+                android:background="@color/navBarGreen"
+                android:drawableLeft="@drawable/newappointment"
+                android:textColor="@color/White"-->
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/tvHeaderLabel"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@android:drawable/stat_notify_chat"
+
+                    android:visibility="visible" />
 
 
-</LinearLayout>
+            </LinearLayout>
 
-<FrameLayout
-android:id="@+id/frameLayout"
-android:layout_width="match_parent"
-android:layout_height="609dp"
-    />
+
+        </RelativeLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
