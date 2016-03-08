@@ -19,38 +19,38 @@
 
 <resources>
 
-    <style name="Theme.Cbe" parent="@style/Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:actionBarItemBackground">@drawable/selectable_background_cbe</item>
-        <item name="android:popupMenuStyle">@style/PopupMenu.Cbe</item>
-        <item name="android:dropDownListViewStyle">@style/DropDownListView.Cbe</item>
-        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Cbe</item>
-        <item name="android:actionDropDownStyle">@style/DropDownNav.Cbe</item>
-        <item name="android:actionBarStyle">@style/ActionBar.Solid.Cbe</item>
-        <item name="android:actionModeBackground">@drawable/cab_background_top_cbe</item>
-        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_cbe</item>
-        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Cbe</item>
-        
-                <!-- Light.DarkActionBar specific -->
-        <item name="android:actionBarWidgetTheme">@style/Theme.Cbe.Widget</item>
+    <!--<style name="Theme.Cbe" parent="@style/Theme.AppCompat.Light.DarkActionBar">-->
+        <!--<item name="android:actionBarItemBackground">@drawable/selectable_background_cbe</item>-->
+        <!--<item name="android:popupMenuStyle">@style/PopupMenu.Cbe</item>-->
+        <!--<item name="android:dropDownListViewStyle">@style/DropDownListView.Cbe</item>-->
+        <!--<item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Cbe</item>-->
+        <!--<item name="android:actionDropDownStyle">@style/DropDownNav.Cbe</item>-->
+        <!--<item name="android:actionBarStyle">@style/ActionBar.Solid.Cbe</item>-->
+        <!--<item name="android:actionModeBackground">@drawable/cab_background_top_cbe</item>-->
+        <!--<item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_cbe</item>-->
+        <!--<item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Cbe</item>-->
+        <!-- -->
+                <!--&lt;!&ndash; Light.DarkActionBar specific &ndash;&gt;-->
+        <!--<item name="android:actionBarWidgetTheme">@style/Theme.Cbe.Widget</item>-->
 
-    </style>
+    <!--</style>-->
 
-    <style name="ActionBar.Solid.Cbe" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@drawable/ab_solid_cbe</item>
-        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_cbe</item>
-        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_cbe</item>
-        <item name="android:progressBarStyle">@style/ProgressBar.Cbe</item>
-    </style>
+    <!--<style name="ActionBar.Solid.Cbe" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">-->
+        <!--<item name="android:background">@drawable/ab_solid_cbe</item>-->
+        <!--<item name="android:backgroundStacked">@drawable/ab_stacked_solid_cbe</item>-->
+        <!--<item name="android:backgroundSplit">@drawable/ab_bottom_solid_cbe</item>-->
+        <!--<item name="android:progressBarStyle">@style/ProgressBar.Cbe</item>-->
+    <!--</style>-->
 
-    <style name="ActionBar.Transparent.Cbe" parent="@style/Widget.AppCompat.ActionBar">
-        <item name="android:background">@drawable/ab_transparent_cbe</item>
-        <item name="android:progressBarStyle">@style/ProgressBar.Cbe</item>
-    </style>
-    
-    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
-    <style name="Theme.Cbe.Widget" parent="@style/Theme.AppCompat">
-        <item name="android:popupMenuStyle">@style/PopupMenu.Cbe</item>
-        <item name="android:dropDownListViewStyle">@style/DropDownListView.Cbe</item>
-    </style>
+    <!--<style name="ActionBar.Transparent.Cbe" parent="@style/Widget.AppCompat.ActionBar">-->
+        <!--<item name="android:background">@drawable/ab_transparent_cbe</item>-->
+        <!--<item name="android:progressBarStyle">@style/ProgressBar.Cbe</item>-->
+    <!--</style>-->
+    <!-- -->
+    <!--&lt;!&ndash; this style is only referenced in a Light.DarkActionBar based theme &ndash;&gt;-->
+    <!--<style name="Theme.Cbe.Widget" parent="@style/Theme.AppCompat">-->
+        <!--<item name="android:popupMenuStyle">@style/PopupMenu.Cbe</item>-->
+        <!--<item name="android:dropDownListViewStyle">@style/DropDownListView.Cbe</item>-->
+    <!--</style>-->
 
 </resources>
