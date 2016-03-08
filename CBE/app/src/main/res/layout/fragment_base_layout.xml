@@ -21,8 +21,8 @@
 
             <ImageView
                 android:id="@+id/btnBack"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="15dp"
@@ -35,12 +35,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
+                android:theme="@style/header"
                 android:layout_margin="5dp"
                 android:layout_toRightOf="@id/btnBack"
                 android:capitalize="characters"
                 android:inputType="textNoSuggestions"
                 android:text="Fragment Title"
-                android:textSize="30sp"/>
+               />
 
             <LinearLayout
                 android:layout_width="wrap_content"
