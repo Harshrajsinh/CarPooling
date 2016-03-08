@@ -3,49 +3,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:weightSum="100">
 
 
     <EditText
+        android:layout_weight="10"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:backgroundTint="@color/colorPrimaryDark"
-        android:hint="@string/username"
+        android:hint="@string/feedback_username"
         android:enabled="false"
         android:inputType="textPersonName"/>
 
     <EditText
+        android:layout_weight="10"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        android:hint="@string/user_email_id"
+        android:hint="@string/feddback_user_email_id"
         android:enabled="false"
         android:inputType="textEmailAddress" />
 
     <EditText
+        android:layout_weight="10"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        android:hint="@string/department"
+        android:hint="@string/feedback_department"
         android:enabled="false" />
 
     <EditText
+        android:layout_weight="10"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        android:hint="@string/age"
+        android:hint="@string/feedback_age"
         android:enabled="false" />
 
     <EditText
+        android:layout_weight="20"
         android:layout_width="fill_parent"
-        android:layout_height="100dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
         android:gravity="top"
-        android:hint="@string/comment"
+        android:hint="@string/feedback_comment"
         android:fitsSystemWindows="true"
         android:maxEms="250"
         android:inputType="textMultiLine"
@@ -53,29 +59,32 @@
 
 
     <RatingBar
+        android:layout_weight="20"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:numStars="5"
         android:layout_gravity="center_horizontal"
         android:stepSize="0.5"
         android:rating="1.0"/>
 
     <CheckBox
+        android:layout_weight="10"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/anonymous"/>
+        android:layout_height="0dp"
+        android:text="@string/feedback_anonymous"/>
 
     <Button
+        android:layout_weight="10"
         android:layout_marginTop="60dp"
         android:layout_width="wrap_content"
-        android:layout_height="36dp"
+        android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/raised_button"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:text="@string/submit"
+        android:text="@string/feedback_submit"
         android:textColor="#ffffff" />
 
 </LinearLayout>
